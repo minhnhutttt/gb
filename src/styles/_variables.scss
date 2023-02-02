@@ -1,0 +1,27 @@
+$breakpoints: (
+  "sm": 600px,
+  "md": 767px,
+  "lg": 1024px,
+  "xl": 1920px,
+) !default;
+
+:root {
+  --base: #ffffff;
+
+  --black: #000000;
+
+  --text: #010101;
+
+  --white: #ffffff;
+
+  --blue-100: #1c5ba9;
+  --blue-25: #000429;
+
+  --red-100: #a22c24;
+
+  --gray-100: #8d8d8d;
+
+  --font-ja: 'Noto Sans JP', sans-serif;
+  --font-en: 'Roboto', sans-serif;
+  --font-en-serif: "Oswald", sans-serif;
+}

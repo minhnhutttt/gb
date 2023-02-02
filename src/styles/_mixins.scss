@@ -1,0 +1,34 @@
+@mixin breakpoint($breakpoint, $type: "max") {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @if $type == "min" {
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    } @else if $type == "max" {
+      @media (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    }
+  } @else {
+    @warn "No value found for `#{$breakpoint}` in $breakpoints.";
+  }
+}
+
+@mixin hover($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-within {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-within {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,177 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+@import url('https: //fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@200;400;500;600;700&family=Roboto:wght@400;500&display=swap');
+html {
+  font-size: 62.5%;
+  @include breakpoint(xl) {
+    font-size: 0.55vw;
+  }
+}
+body {
+  font-family: var(--font-ja);
+  font-size: 1.4rem;
+  font-size-adjust: 100%;
+  line-height: 1;
+  color: var(--black);
+  background: var(--base);
+}
+
+main {
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.only-pc {
+  @include breakpoint(md) {
+    display: none;
+  }
+  display: block;
+}
+.only-sp {
+  @include breakpoint(md) {
+    display: block;
+  }
+  display: none;
+}
+
+.invisible {
+  transform: translateY(100px);
+  opacity: 0;
+}
+.visible {
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  transform: translateY(0);
+  opacity: 1;
+}
