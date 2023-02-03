@@ -1,0 +1,41 @@
+.download {
+    background-color: #fff1e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 20px 95px;
+    margin-top: -20px;
+    &-ttl {
+        font-size: 48px;
+        font-weight: bold;
+    }
+    &-txt {
+        margin-top: 25px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    &-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        > a {
+            background-color: #ff6600;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+            padding: 0 40px;
+            border-radius: 40px;
+            p {
+                font-size: 24px;
+                margin-left: 20px;
+                flex: 1;
+            }
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+}

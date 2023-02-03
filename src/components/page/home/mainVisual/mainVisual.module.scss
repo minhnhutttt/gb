@@ -1,0 +1,47 @@
+.mv {
+    padding: 100px 20px 50px;
+    background-image: url(../../../../images/bg-mv.jpg);
+    @media screen and (max-width: 769px) {
+        padding: 50px 20px 30px;
+    }
+    &-wrap {
+        width: 100%;
+        max-width: 1360px;
+        margin: 0 auto;
+    }
+    &-txt {
+        font-size: 72px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        @media screen and (max-width: 769px) {
+            font-size: 36px;
+        }
+    }
+    &-main {
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        &-img {
+            margin-right: 25px;
+        }
+        &-txt {
+            flex: 1;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.9;
+            margin-top: 5px;
+            letter-spacing: 0.08em;
+        }
+    }
+    &-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        & > a {
+            margin-left: 15px;
+        }
+    }
+}
