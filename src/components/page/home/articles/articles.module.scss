@@ -1,0 +1,31 @@
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px 50px;
+    gap: 20px;
+    &-item {
+        width: calc(50% - 10px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #ebebeb;
+        padding: 74px 20px 54px;
+        &-ttl {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        &-txt {
+            font-size: 18px;
+            line-height: 1.7;
+            text-align: center;
+            margin-bottom: 10px;
+            min-height: 62px;
+        }
+        &-img {
+            box-shadow: 10px 12px 20px rgba(208, 208, 208, 1);
+            border-radius: 100%;
+        }
+    }
+}

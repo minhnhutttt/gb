@@ -1,21 +1,8 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "./intro.module.scss"
-import { useStaticQuery, graphql } from "gatsby"
 
 const Intro = () => {
-    const data = useStaticQuery(graphql`
-        query MyQuery {
-            imgPrivate :file(name: {eq: "img-sync"}) {
-                childImageSharp {
-                    fluid {
-                        src
-                    }
-                }
-            }
-        }
-    `)
-    console.log(data);
     return (
         <div className={styles.intro}>
             <div className={styles.introWrap}>

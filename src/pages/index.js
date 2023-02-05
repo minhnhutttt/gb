@@ -5,11 +5,14 @@ import Seo from "@components/seo"
 import MainVisual from "@components/page/home/mainVisual"
 import Intro from "@components/page/home/intro"
 import Download from "../components/page/home/download"
+import Articles from "../components/page/home/articles"
 
 const IndexPage = () => (
   <Layout>
     <MainVisual />
     <Intro />
+    <Download />
+    <Articles />
     <Download />
   </Layout>
 )

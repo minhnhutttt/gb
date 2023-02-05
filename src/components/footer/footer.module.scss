@@ -1,0 +1,54 @@
+.footer {
+    background-color: #000;
+    padding: 110px 20px 30px;
+    &-wrap {
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    &-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 110px;
+    }
+    &-flex {
+        display: flex;
+        margin-left: 100px;
+        gap: 40px;
+    }
+    &-item {
+        max-width: 460px;
+        letter-spacing: 0.05em;
+        line-height: 1.6;
+        &-ttl {
+            color: #fff;
+            font-size: 16px;
+        }
+        &-txt {
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+    &-contact {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        a {
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span {
+                margin-left: 10px;
+            }
+        }
+    }
+    &-copy {
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+    }
+}
